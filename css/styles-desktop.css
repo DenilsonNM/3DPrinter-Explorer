@@ -1,0 +1,119 @@
+#root {
+  --color-blue: #388BA5;
+  --color-dark-blue: #232E33;
+  --color-white: #F1F1F1;
+  --color-red: #A53838;
+}
+
+/* --------------FORMAT CSS------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.borde {
+  border: 1px red solid;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-dark-blue);
+  font-family: Helvetica;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ---------------BOTONES--------------- */
+
+.button-1 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
+}
+
+.button-1:hover {
+  color: var(--color-dark-blue);
+  background-color: var(--color-white);
+  border-color: var(--color-dark-blue);
+}
+
+.button-2 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 2px var(--color-blue) solid;
+  border-radius: 10px;
+}
+
+.button-2:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.button-3 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  border: 2px var(--color-red) solid;
+  border-radius: 10px;
+}
+
+.button-3:hover {
+  color: var(--color-red);
+  background-color: var(--color-white);
+  border-color: var(--color-red);
+}
+
+/* ------------------------------------- */
+
+.logo {
+  color: var(--color-dark-blue);
+  font-size: 24px;
+  background-color: var(--color-white);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.sec-header {
+  display: flex;
+  background-color: var(--color-blue);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.menu-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-header a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-white);
+  padding-left: 20px;
+}
