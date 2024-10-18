@@ -1,0 +1,45 @@
+/* ------------ VARIABLES ---------------------- */
+#root {
+    --color-blue: #388BA5;
+    --color-dark-blue: #232E33;
+    --color-white: #F1F1F1;
+    --color-red: #A53838;
+  }
+/* ------------ FORMATO CSS ------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .borde {
+    border: 1px red solid;
+  }
+  
+  .ancho {
+    max-width: 1000px;
+    /* border: 1px red solid; */
+    margin: auto;
+  }
+
+  /* -------------------- REGISTRO ------------  */
+
+  .logo{
+    border: 1px red solid;
+    max-width: 500px;
+    text-align: center;
+    background-color: var(--color-dark-blue);
+  }
+  .logo a{
+    border: 1px red solid;
+    font-size: 24px;
+    border-radius: 100%;
+    padding: 10px;
+    display: inline-block;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+  }
+  .art-registro{
+    border: 1px red solid;
+    max-width: 500px;
+  }
