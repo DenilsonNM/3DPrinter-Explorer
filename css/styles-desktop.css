@@ -1,8 +1,14 @@
-#root {
+/* ------------ IMPORTAR LIBRERIA DE TIPOGRAFIA ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------ VARIABLES ---------------------- */
+
+:root {
   --color-blue: #388BA5;
   --color-dark-blue: #232E33;
   --color-white: #F1F1F1;
   --color-red: #A53838;
+  --main-font: 'Roboto', Arial, sans-serif;
 }
 
 /* --------------FORMAT CSS------------- */
@@ -25,7 +31,8 @@
 body {
   background-color: var(--color-white);
   color: var(--color-dark-blue);
-  font-family: Helvetica;
+  font-family: var(--main-font);
+  font-style: normal;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
 }
@@ -89,6 +96,10 @@ button {
 
 /* ------------------------------------- */
 
+.div-header {
+  background-color: var(--color-blue);
+}
+
 .logo {
   color: var(--color-dark-blue);
   font-size: 24px;
@@ -99,7 +110,6 @@ button {
 
 .sec-header {
   display: flex;
-  background-color: var(--color-blue);
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;

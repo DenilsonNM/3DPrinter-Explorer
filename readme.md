@@ -2,7 +2,7 @@
 
 [Preview](https://denilsonnm.github.io/3DPrinter-Explorer/)
 
-# Residencia profecional 02/09/2024 - 02/01/2025
+# Residencia profesional 02/09/2024 - 02/01/2025
 
 "DESARROLLO DE UN SISTEMA WEB PARA ACCESO A RECURSOS DE PROTOTIPADO RÁPIDO E IMPRESORAS 3D EN INSTITUTOS DE EDUCACIÓN SUPERIOR"
 
