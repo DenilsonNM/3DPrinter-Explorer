@@ -42,14 +42,70 @@ button {
   cursor: pointer;
 }
 
+/* ---------------BOTONES--------------- */
+
+.button-1 {
+  display: inline-block;
+  text-align: center;
+  padding: 8px 20px;
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button-1:hover {
+  color: var(--color-dark-blue);
+  background-color: var(--color-white);
+  border-color: var(--color-dark-blue);
+}
+
+.button-2 {
+  display: inline-block;
+  text-align: center;
+  padding: 8px 20px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 2px var(--color-blue) solid;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button-2:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.button-3 {
+  display: inline-block;
+  text-align: center;
+  padding: 8px 20px;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  border: 2px var(--color-red) solid;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button-3:hover {
+  color: var(--color-red);
+  background-color: var(--color-white);
+  border-color: var(--color-red);
+}
+
 /* -------------------- REGISTRO ------------  */
 
 .sec-registro {
+  background-color: var(--color-dark-blue);
+}
+
+.div-sec-registro {
   /* border: 1px red solid; */
   padding: 40px;
   max-width: 500px;
   background-color: var(--color-dark-blue);
-  margin-top: 5px;
 }
 
 .logo {
@@ -94,22 +150,24 @@ button {
 .form-group input,
 .form-group select {
   padding: 10px;
-  border: 0;
-  border-bottom: 1px var(--color-dark-blue) solid;
+  /* border: 0; */
+  /* border-bottom: 1px var(--color-dark-blue) solid; */
+  border: 2px var(--color-dark-blue) solid;
   border-radius: 5px;
-  outline: none;
-  width: 100%;
+  background-color: var(--color-white);
+  /* width: 100%; */
 }
 
 .form-checkbox {
-  /* border: 1px red solid ; */
+  /* border: 1px red solid; */
   display: flex;
   align-items: center;
-  padding: 5px;
+  justify-content: center;
 }
 
 .check-text {
-  font-size: px;
+  font-size: 12px;
+  margin-left: 20px;
   /* border: 1px red solid; */
 }
 
@@ -118,12 +176,4 @@ button {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-
-.form-btns button {
-  border: 0;
-  background-color: var(--color-dark-blue);
-  padding: 10px 30px;
-  color: white;
-  border-radius: 10px;
 }
