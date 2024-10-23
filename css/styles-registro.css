@@ -189,3 +189,11 @@ button {
   justify-content: center;
   gap: 20px;
 }
+
+.imge{
+  border: 1px red solid;
+  max-width: 450px;
+}
+.imge img{
+  width: 100%;
+}
