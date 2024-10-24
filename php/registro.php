@@ -19,32 +19,35 @@
 
             <article class="art-registro">
 
-                <form action="datos-regist.php" class="form-group">
+                <form action="datos-regist.php" class="form-group" method="POST">
 
                     <p class="art-registro-text">Datos Personales</p>
 
                     <input type="text" placeholder="Nombre(s)" name="nombres">
-                    <input type="text" placeholder="Primer apellido" name="p-apellido">
-                    <input type="text" placeholder="Segundo apellido" name="s-apellido">
+                    <input type="text" placeholder="Primer apellido" name="pApellido">
+                    <input type="text" placeholder="Segundo apellido" name="sApellido">
                     <input type="email" placeholder="Correo electronico" name="correo">
-                    <input type="number" placeholder="Numero de telefono/Celular" name="n-celular">
+                    <input type="number" placeholder="Numero de telefono/Celular" name="nCelular">
 
                     <p class="art-registro-text"> Datos Escolares</p>
 
                     <input type="text" placeholder="Matricula" name="matricula">
                     <select name="institucion">
                         <option value="">Selecciona una institucion</option>
+                        <option value="Preuba">Prueba</option>
                     </select>
                     <select name="carrera">
                         <option value="">Carrera</option>
+                        <option value="Preuba">Prueba</option>
                     </select>
                     <select name="semestre">
                         <option value="">Selecciona el semestre</option>
+                        <option value="Preuba">Prueba</option>
                     </select>
 
                     <input type="Usuario" placeholder="Usuario" name="usuario">
                     <input type="password" placeholder="Contraseña" name="contrasena">
-                    <input type="password" placeholder="Confirmar Contraseña" name="contrasena-confirm">
+                    <input type="password" placeholder="Confirmar Contraseña" name="contrasenaConfirm">
 
                     <div class="form-checkbox">
                         <input type="checkbox">
@@ -52,7 +55,7 @@
                     </div>
 
                     <div class="form-btns">
-                        <button type="submit" class="button-1">Registrase</button>
+                        <button type="submit" value="login" class="button-1">Registrase</button>
                         <button type="reset" class="button-3">Cancelar</button>
                     </div>
                 </form>

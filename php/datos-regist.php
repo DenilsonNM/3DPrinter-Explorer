@@ -1,36 +1,35 @@
 <?php 
 require "conexion.php"; 
 
-$nombre = $_POST[""];
-$pApellido = $_POST[""];
-$sApellido = $_POST[""];
-$correo = $_POST[""];
-$nCelular = $_POST[""];
-$matricula = $_POST[""];
-$institucion = $_POST[""];
-$carrera = $_POST[""];
-$semestre = $_POST[""];
-$usuario = $_POST[""];
-$contrasena = $_POST[""];
-$contrasenaConfirm = $_POST[""];
+$nombre = $_POST["nombres"];
+$pApellido = $_POST["pApellido"];
+$sApellido = $_POST["sApellido"];
+$correo = $_POST["correo"];
+$nCelular = $_POST["nCelular"];
+$matricula = $_POST["matricula"];
+$institucion = $_POST["institucion"];
+$carrera = $_POST["carrera"];
+$semestre = $_POST["semestre"];
+$usuario = $_POST["usuario"];
+$contrasena = $_POST["contrasena"];
+$contrasenaConfirm = $_POST["contrasenaConfirm"];
 
-$agregar = "INSERT INTO residencia (nombres, p-apellido, s-apellido, correo, n-celular, matricula, institucion, carrera, semestre, usuario, contrasena, contrasena-confirm) VALUES ('$nombre', '$pApellido', '$sApellido', '$correo', '$nCelular', '$matricula'. '$institucion'. '$carrera'. '$semestre'. '$usuario'. '$contrasena'. '$contrasenaConfirm')"; 
+$insertar = "INSERT INTO registo (nombres, pApellido, sApellido, correo, nCelular, matricula, institucion, carrera, semestre, usuario, contrasena, contrasenaConfirm) VALUES ('$nombre', '$pApellido', '$sApellido', '$correo', '$nCelular', '$matricula'. '$institucion'. '$carrera'. '$semestre'. '$usuario'. '$contrasena'. '$contrasenaConfirm')"; 
 
-$query = mysqli_query ($conectar, $agregar);
+$query = mysqli_query ($conectar, $insertar);
 
-if($query){
+if ($query) {
+    echo'
+    <script>
+        alert("Se guardo correctamente");
+        location.href ="registro.php";
+    </script>
+    ';
+}else{
     echo '
     <script>
-    alert ("SE GUARDO CORRECTAMENTE");
-        location.href = "registro.php";
-        </script>
+        alert("Fallo en la base de datos");
+        location.href ="registro.php";
+    </script>
     ';
-  }else{
-        echo'
-        <script>
-        alert ("NO SE GUARDO CORRECTAMENTE");
-            location.href = "registro.php";
-            </script>
-  
-        ';
-    }
+}
