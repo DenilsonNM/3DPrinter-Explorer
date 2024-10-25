@@ -127,3 +127,7 @@ button {
   color: var(--color-white);
   padding-left: 20px;
 }
+
+.nav-header a:hover {
+  text-decoration: underline;
+}

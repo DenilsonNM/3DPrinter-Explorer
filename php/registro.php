@@ -11,6 +11,8 @@
 
 <body>
 
+    <div class=".div-alert-registro"></div>
+
     <section class="sec-registro">
         <div class="div-sec-registro ancho">
             <article class="logo">
@@ -19,44 +21,47 @@
 
             <article class="art-registro">
 
-                <form action="datos-regist.php" class="form-group" method="POST">
+                <form action="guardar-usu.php" class="form-group" method="POST">
 
                     <p class="art-registro-text">Datos Personales</p>
 
-                    <input type="text" placeholder="Nombre(s)" name="nombres">
-                    <input type="text" placeholder="Primer apellido" name="pApellido">
-                    <input type="text" placeholder="Segundo apellido" name="sApellido">
-                    <input type="email" placeholder="Correo electronico" name="correo">
-                    <input type="number" placeholder="Numero de telefono/Celular" name="nCelular">
+                    <input type="text" placeholder="Nombre(s)" name="nombres" required>
+                    <input type="text" placeholder="Primer apellido" name="p_apellido" required>
+                    <input type="text" placeholder="Segundo apellido" name="s_apellido" required>
+                    <input type="email" placeholder="Correo electronico" name="correo" required>
+                    <input type="number" placeholder="Numero de telefono/Celular" name="n_celular" required>
 
-                    <p class="art-registro-text"> Datos Escolares</p>
+                    <p class="art-registro-text">Datos Escolares</p>
 
-                    <input type="text" placeholder="Matricula" name="matricula">
-                    <select name="institucion">
+                    <input type="text" placeholder="Matricula" name="matricula" required>
+                    <select name="institucion" required>
                         <option value="">Selecciona una institucion</option>
-                        <option value="Preuba">Prueba</option>
+                        <option value="Instituto Tecnológico de Mérida">Instituto Tecnológico de Mérida</option>
+                        <option value="Universidad Modelo">Universidad Modelo</option>
+                        <option value="Universidad Anáhuac Mayab">Universidad Anáhuac Mayab</option>
                     </select>
-                    <select name="carrera">
+                    <select name="carrera" required>
                         <option value="">Carrera</option>
-                        <option value="Preuba">Prueba</option>
+                        <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Computacionales</option>
                     </select>
-                    <select name="semestre">
+                    <select name="semestre" required>
                         <option value="">Selecciona el semestre</option>
-                        <option value="Preuba">Prueba</option>
+                        <option value="1">1</option>
+                        <option value="1">11</option>
                     </select>
 
-                    <input type="Usuario" placeholder="Usuario" name="usuario">
-                    <input type="password" placeholder="Contraseña" name="contrasena">
-                    <input type="password" placeholder="Confirmar Contraseña" name="contrasenaConfirm">
+                    <input type="text" placeholder="Usuario" name="usuario" required>
+                    <input type="password" placeholder="Contraseña" name="contrasena" required>
+                    <input type="text" placeholder="Confirmar Contraseña" required>
 
                     <div class="form-checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <p class="check-text">Acepto todos los terminos y condicones</p>
                     </div>
 
                     <div class="form-btns">
-                        <button type="submit" value="login" class="button-1">Registrase</button>
-                        <button type="reset" class="button-3">Cancelar</button>
+                        <button type="submit" class="button-1" onclick="return confirm('¿Estás seguro de que desea continuar')">Registrase</button>
+                        <button type="button" class="button-3"><a href="../index.html" onclick="return confirm('¿Estás seguro de que desea salir?')">Cancelar</a></button>
                     </div>
                 </form>
             </article>
