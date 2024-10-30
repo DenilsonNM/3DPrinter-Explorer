@@ -19,13 +19,13 @@
 
             <article class="art-registro">
 
-                <form action="" class="form-group">
+                <form action="comparacion.php" class="form-group" method="POST">
 
                     <p class="art-registro-text">Iniciar Sesion</p>
 
-                    <input type="text" placeholder="Usuario">
+                    <input type="text" placeholder="Usuario" name="user" required >
 
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" name="pass" required>
 
                     <div class="form-btns">
                         <button type="submit" class="button-1">Ingresar</button>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3DPrinter Explorer 2024</title>
-    <link rel="stylesheet" href="css/styles-landing.css">
+    <link rel="stylesheet" href="../css/styles-landing.css">
     <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
 </head>
 
