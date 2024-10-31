@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class=".div-alert-registro"></div>
+    <div class="div-alert-registro"></div>
 
     <section class="sec-registro">
         <div class="div-sec-registro ancho">

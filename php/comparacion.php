@@ -1,4 +1,4 @@
-    <?php 
+    <?php
     require "conexion.php";
 
     $user = $_POST["user"];
@@ -13,31 +13,20 @@
     // }
 
     if (mysqli_num_rows($query) > 0) {
-        include("index.php");
-        ?>
-        <div class="alert-registro">
-        <h1>Acceso Concedido</h1>
-    </div>
-    <script>
-        setTimeout(function() {
-            // window.location.href = '../index.html';
-            window.location.href = 'index.php';
-        }, 3000);
-    </script>
-    <?php 
+        header("location: main/main.html");
     } else {
         include("login.php");
-        ?>
+    ?>
         <div class="alert-registro">
-        <h1>Usuario o Contraseña Incorrecta</h1>
-    </div>
-    <script>
-        setTimeout(function() {
-            window.location.href = '/login.php';
-        }, 5000);
-    </script>
-        <?php 
+            <h1>Usuario o Contraseña Incorrecta</h1>
+        </div>
+        <script>
+            setTimeout(function() {
+                window.location.href = 'login.php';
+            }, 5000);
+        </script>
+    <?php
         exit;
     }
-
-
+    mysqli_free_result($query);
+    mysqli_close($conectar);

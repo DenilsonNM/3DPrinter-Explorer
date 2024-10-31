@@ -220,3 +220,20 @@ button {
   width: 100%;
   height: 100%;
 }
+
+/* ------------------------------------- */
+
+.div-alert-registro {
+  position: relative;
+  text-align: center;
+}
+
+.alert-registro {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+}

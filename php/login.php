@@ -11,6 +11,8 @@
 
 <body>
 
+    <div class="div-alert-registro"></div>
+
     <section class="sec-registro">
         <div class="div-sec-registro ancho">
             <article class="logo">
@@ -23,7 +25,7 @@
 
                     <p class="art-registro-text">Iniciar Sesion</p>
 
-                    <input type="text" placeholder="Usuario" name="user" required >
+                    <input type="text" placeholder="Usuario" name="user" required>
 
                     <input type="password" placeholder="Contraseña" name="pass" required>
 
