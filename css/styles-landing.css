@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   color: var(--color-dark-blue);
   font-family: var(--main-font);
   font-style: normal;
@@ -130,4 +130,81 @@ button {
 
 .nav-header a:hover {
   text-decoration: underline;
+}
+/* ------------- SEC-HOME-LANDING ---------------------------- */
+
+.sec-land-home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 0px 0px 15px #ccc;
+  padding: 40px;
+  border-radius: 15px;
+}
+.sec-land-home figure{
+  max-width: 500px;
+  /* border: 1px red solid; */
+}
+.sec-land-home img{
+  width: 100%;
+  display: block;
+}
+
+.sec-art-home{
+  max-width: 600px;
+}
+.sec-art-home p, ul{
+  margin-top: 25px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.sec-art-home li{
+  margin-left: 50px;
+}
+.sec-art-home h1{
+  font-size: 45px;
+}
+/* ----------------------------------------------------------- */
+.escuelas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+  padding: 20px;
+  background-color: var(--color-white);
+}
+.escuelas figure{
+  max-width: 100px;
+}
+.escuelas img{
+  width: 100%;
+  display: block;
+  filter: grayscale(1);
+}
+/* ----------------------------------------------------------- */
+.sec-land-about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 15px #ccc;
+  padding: 40px;
+  border-radius: 15px;
+}
+.sec-art-about{
+  max-width: 560px;
+}
+.sec-art-about h1{
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.sec-art-about p{
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
