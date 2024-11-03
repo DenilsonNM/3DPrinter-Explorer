@@ -151,8 +151,49 @@ button {
   font-size: 24px;
 }
 
+/* ------------------------------------- */
+
 .arti-main {
   /* width: 85%; */
   margin-left: 160px;
-  padding: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.arti-detail {
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
+}
+
+.arti-sumary {
+  border-radius: 5px 5px 0px 0px;
+  font-size: 24px;
+  padding: 20px 50px;
+}
+
+summary::marker {
+  color: var(--color-blue);
+}
+
+
+.arti-sumary:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.arti-sumary:focus {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.arti-sum-div {
+  padding: 30px 60px;
+}
+
+.sum-div-map {
+  border: 2px var(--color-dark-blue) solid;
+  height: 200px;
+  width: 200px;
 }
