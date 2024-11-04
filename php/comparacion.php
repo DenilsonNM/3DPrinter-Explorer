@@ -13,18 +13,18 @@
     // }
 
     if (mysqli_num_rows($query) > 0) {
-        header("location: main/main.html");
+        header("location: main/main.php");
     } else {
         include("login.php");
     ?>
         <div class="alert-registro">
             <h1>Usuario o Contraseña Incorrecta</h1>
         </div>
-        <script>
+        <!-- <script>
             setTimeout(function() {
                 window.location.href = 'login.php';
             }, 5000);
-        </script>
+        </script> -->
     <?php
         exit;
     }

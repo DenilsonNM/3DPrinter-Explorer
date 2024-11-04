@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3DPrinter Explorer 2024</title>
-  <link rel="stylesheet" href="../../css/styles-main.css">
+  <link rel="stylesheet" href="../../css/main/styles-main.css">
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +17,7 @@
     <a href="../../index.html" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
   </header>
 
-  <section class="sect-main">
+  <!-- <section class="sect-main">
     <nav class="nav-main">
       <ul>
         <li><a href="main-ubicaciones.html" class="button-1"><i class="fa-solid fa-location-dot"></i></a></li>
@@ -27,10 +27,15 @@
         <li><a href="#" class="button-1"><i class="fa-solid fa-database"></i></a></li>
       </ul>
     </nav>
-    <article class="arti-main">
-      <h2>3DPrinter Explorer</h2>
-    </article>
-  </section>
+  </section> -->
+
+  <?php
+  include "menu.php";
+  ?>
+
+  <article class="arti-main">
+    <h2>3DPrinter Explorer</h2>
+  </article>
 
 </body>
 
