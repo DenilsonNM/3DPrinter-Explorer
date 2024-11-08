@@ -7,6 +7,8 @@
     <title>3DPrinter Explorer 2024</title>
     <link rel="stylesheet" href="../css/styles-registro.css">
     <script src="https://kit.fontawesome.com/c35572497d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
 
             <article class="art-registro">
 
-                <form action="guardar-usu.php" class="form-group" method="POST">
+                <form action="guardar-usu.php" class="form-group" method="POST" >
 
                     <p class="art-registro-text">Datos Personales</p>
 
@@ -34,13 +36,10 @@
                     <p class="art-registro-text">Datos Escolares</p>
 
                     <input type="text" placeholder="Matricula" name="matricula" required>
-                    <select name="institucion" required>
-                        <option value="">Selecciona una institucion</option>
-                        <option value="Instituto Tecnológico de Mérida">Instituto Tecnológico de Mérida</option>
-                        <option value="Universidad Modelo">Universidad Modelo</option>
-                        <option value="Universidad Anáhuac Mayab">Universidad Anáhuac Mayab</option>
+                    <select name="institucion" required id="universidad">
+                        <!-- <option value="">Selecciona Universidad</option> -->
                     </select>
-                    <select name="carrera" required>
+                    <select name="carrera" requiredn id="carrera">
                         <option value="">Carrera</option>
                         <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Computacionales</option>
                     </select>
@@ -68,5 +67,6 @@
         </div>
     </section>
 </body>
+
 
 </html>

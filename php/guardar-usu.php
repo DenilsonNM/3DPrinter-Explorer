@@ -47,3 +47,4 @@ if ($query) {
 <?php
     exit;
 }
+
