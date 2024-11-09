@@ -46,7 +46,7 @@
                     <select name="semestre" required>
                         <option value="">Selecciona el semestre</option>
                         <option value="1">1</option>
-                        <option value="1">11</option>
+                        <option value="11">11</option>
                     </select>
 
                     <input type="text" placeholder="Usuario" name="usuario" required>
