@@ -36,12 +36,11 @@
                     <p class="art-registro-text">Datos Escolares</p>
 
                     <input type="text" placeholder="Matricula" name="matricula" required>
-                    <select name="institucion" required id="universidad">
+                    <select name="institucion" required id="universidad" onchange="cargarCarreras(this.value)">
                         <!-- <option value="">Selecciona Universidad</option> -->
                     </select>
-                    <select name="carrera" requiredn id="carrera">
-                        <option value="">Carrera</option>
-                        <option value="Ingenieria en Sistemas Computacionales">Ingenieria en Sistemas Computacionales</option>
+                    <select name="carrera" required id="carrera">
+                        <option value="">Seleccione una carrera</option>
                     </select>
                     <select name="semestre" required>
                         <option value="">Selecciona el semestre</option>
@@ -60,6 +59,7 @@
 
                     <div class="form-btns">
                         <button type="submit" class="button-1" onclick="return confirm('¿Estás seguro de que desea continuar')">Registrase</button>
+
                         <button type="button" class="button-3"><a href="../index.html" onclick="return confirm('¿Estás seguro de que desea salir?')">Cancelar</a></button>
                     </div>
                 </form>
