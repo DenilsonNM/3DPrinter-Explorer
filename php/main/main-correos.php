@@ -26,34 +26,34 @@
     <details class="arti-detail">
       <summary class="arti-sumary">EDI - Instituto Tecnológico de Mérida</summary>
       <div class="arti-sum-div">
-        <p><span>Encargado:</span> nombres apellidos</p>
-        <p><span>Correo del encargado:</span> ejemplo@ejemplo.com</p>
+        <p><span>Encargado:</span> Guillermo Nadal</p>
+        <p><span>Correo del encargado:</span> gnadalgonzalez@gmail.com</p>
         <p><span>Número de telefono:</span> 999-999-9999</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
-      <a href="mailto:ejemplo@ejemplo.com" class="button-2">Enviar Correo</a>
+      <div class="arti-sum-btn"><a href="mailto:gnadalgonzalez@gmail.com" class="button-2">Enviar Correo</a></div>
     </details>
 
     <details class="arti-detail">
       <summary class="arti-sumary">EDI - Universidad Modelo</summary>
       <div class="arti-sum-div">
-        <p><span>Encargado:</span> nombres apellidos</p>
-        <p><span>Correo del encargado:</span> ejemplo@ejemplo.com</p>
+        <p><span>Encargado:</span> Francisco Roura</p>
+        <p><span>Correo del encargado:</span> roura@modelo.edu.mx</p>
         <p><span>Número de telefono:</span> 999-999-9999</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
-      <a href="mailto:ejemplo@ejemplo.com" class="button-2">Enviar Correo</a>
+      <div class="arti-sum-btn"><a href="mailto:roura@modelo.edu.mx" class="button-2">Enviar Correo</a></div>
     </details>
 
     <details class="arti-detail">
       <summary class="arti-sumary">EDI - Universidad Anáhuac Mayab</summary>
       <div class="arti-sum-div">
-        <p><span>Encargado:</span> nombres apellidos</p>
-        <p><span>Correo del encargado:</span> ejemplo@ejemplo.com</p>
+        <p><span>Encargado:</span> Narciso Antonio Acuña González</p>
+        <p><span>Correo del encargado:</span> narciso.acuna@anahuac.mx</p>
         <p><span>Número de telefono:</span> 999-999-9999</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
-      <a href="mailto:ejemplo@ejemplo.com" class="button-2">Enviar Correo</a>
+      <div class="arti-sum-btn"><a href="mailto:narciso.acuna@anahuac.mx" class="button-2">Enviar Correo</a></div>
     </details>
   </article>
 

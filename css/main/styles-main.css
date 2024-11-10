@@ -174,12 +174,26 @@ span {
   gap: 30px;
 }
 
+
+/* ----------SISTEMA EXPERTO------------- */
+
+.sisexp {
+  border: 2px var(--color-dark-blue) solid;
+  height: 500px;
+  border-radius: 10px;
+}
+
+
+/* --------CORREO Y UBICACIONES----------- */
+
 .arti-detail {
   border: 2px var(--color-dark-blue) solid;
   border-radius: 10px;
 }
 
 .arti-sumary {
+  /* background-color: var(--color-dark-blue); */
+  /* color: var(--color-white); */
   border-radius: 5px 5px 0px 0px;
   font-size: 24px;
   padding: 20px 50px;
@@ -189,10 +203,9 @@ summary::marker {
   color: var(--color-blue);
 }
 
-
 .arti-sumary:hover {
-  background-color: var(--color-dark-blue);
   color: var(--color-white);
+  background-color: var(--color-dark-blue);
 }
 
 .arti-sumary:focus {
@@ -202,10 +215,17 @@ summary::marker {
 
 .arti-sum-div {
   padding: 30px 60px;
+  line-height: 26px;
+  border-top: 2px var(--color-dark-blue) solid;
 }
 
 .sum-div-map {
   border: 2px var(--color-dark-blue) solid;
   height: 200px;
   width: 200px;
+}
+
+.arti-sum-btn {
+  padding: 0px 60px;
+  padding-bottom: 30px;
 }

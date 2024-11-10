@@ -22,7 +22,34 @@
   ?>
 
   <article class="arti-main">
-    <h2>3DPrinter Explorer</h2>
+
+    <details class="arti-detail">
+      <summary class="arti-sumary">NCIE - Instituto Tecnológico de Mérida</summary>
+      <div class="arti-sum-div">
+        <p>aqui va la tabla wey</p>
+      </div>
+    </details>
+
+    <details class="arti-detail">
+      <summary class="arti-sumary">Cl - Universidad Modelo</summary>
+      <div class="arti-sum-div">
+        <p>aqui va la tabla wey</p>
+      </div>
+    </details>
+
+    <details class="arti-detail">
+      <summary class="arti-sumary">LIEET - Universidad Anáhuac Mayab</summary>
+      <div class="arti-sum-div">
+        <p>aqui va la tabla wey</p>
+      </div>
+    </details>
+
+    <details class="arti-detail">
+      <summary class="arti-sumary">Todos los EDI</summary>
+      <div class="arti-sum-div">
+        <p>aqui va la tabla wey</p>
+      </div>
+    </details>
   </article>
 
 </body>

@@ -22,7 +22,7 @@
   ?>
 
   <article class="arti-main">
-    <h2>3DPrinter Explorer</h2>
+    <div class="sisexp"></div>
   </article>
 
 </body>
