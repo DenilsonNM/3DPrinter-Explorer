@@ -109,7 +109,7 @@ span {
   align-items: center;
   position: sticky;
   top: 0;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .head-main h1 {
@@ -147,7 +147,7 @@ span {
   color: #A53838;
   width: 160px;
   color: var(--color-dark-blue);
-  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .nav-main ul {

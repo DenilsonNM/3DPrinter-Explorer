@@ -32,7 +32,7 @@ require "proteccion.php"
       <div class="arti-sum-div">
         <p><span>Encargado:</span> Guillermo Nadal</p>
         <p><span>Correo del encargado:</span> gnadalgonzalez@gmail.com</p>
-        <p><span>Número de telefono:</span> 999-999-9999</p>
+        <p><span>Número de telefono:</span> 9994115619</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
       <div class="arti-sum-btn"><a href="mailto:gnadalgonzalez@gmail.com" class="button-2">Enviar Correo</a></div>
@@ -43,7 +43,7 @@ require "proteccion.php"
       <div class="arti-sum-div">
         <p><span>Encargado:</span> Francisco Roura</p>
         <p><span>Correo del encargado:</span> roura@modelo.edu.mx</p>
-        <p><span>Número de telefono:</span> 999-999-9999</p>
+        <p><span>Número de telefono:</span> 9999963370</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
       <div class="arti-sum-btn"><a href="mailto:roura@modelo.edu.mx" class="button-2">Enviar Correo</a></div>
@@ -52,9 +52,9 @@ require "proteccion.php"
     <details class="arti-detail">
       <summary class="arti-sumary">EDI - Universidad Anáhuac Mayab</summary>
       <div class="arti-sum-div">
-        <p><span>Encargado:</span> Mariana Berenice González Leija</p>
+        <p><span>Encargado:</span> Mariana González</p>
         <p><span>Correo del encargado:</span> mariana.gonzalez@anahuac.mx</p>
-        <p><span>Número de telefono:</span> 999-999-9999</p>
+        <p><span>Número de telefono:</span> 9999999999</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
       <div class="arti-sum-btn"><a href="mailto:mariana.gonzalez@anahuac.mx" class="button-2">Enviar Correo</a></div>
