@@ -1,3 +1,7 @@
+<?php
+require "proteccion.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
   <header class="head-main">
     <h1>Información de contacto</h1>
     <a href="main.php" class="logo"><i class="fa-solid fa-binoculars"></i></a>
-    <a href="../../index.html" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <a href="cerrarsesion.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
   </header>
 
   <?php
@@ -48,12 +52,12 @@
     <details class="arti-detail">
       <summary class="arti-sumary">EDI - Universidad Anáhuac Mayab</summary>
       <div class="arti-sum-div">
-        <p><span>Encargado:</span> Maria Isabel Gamboa Marcin</p>
-        <p><span>Correo del encargado:</span> isabelgamboa@modelo.edu.mx</p>
+        <p><span>Encargado:</span> Mariana Berenice González Leija</p>
+        <p><span>Correo del encargado:</span> mariana.gonzalez@anahuac.mx</p>
         <p><span>Número de telefono:</span> 999-999-9999</p>
         <p><span>Horarios:</span> lunes-viernes 09:00 am - 12:00 pm</p>
       </div>
-      <div class="arti-sum-btn"><a href="mailto:isabelgamboa@modelo.edu.mx" class="button-2">Enviar Correo</a></div>
+      <div class="arti-sum-btn"><a href="mailto:mariana.gonzalez@anahuac.mx" class="button-2">Enviar Correo</a></div>
     </details>
   </article>
 

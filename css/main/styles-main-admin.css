@@ -85,22 +85,22 @@ span {
   text-align: center;
   padding: 5px 20px;
   color: var(--color-white);
-  background-color: var(--color-red);
-  border: 2px var(--color-red) solid;
+  background-color: var(--color-dark-blue);
+  border: 2px var(--color-dark-blue) solid;
   border-radius: 10px;
   min-width: 100px;
 }
 
 .button-3:hover {
-  color: var(--color-red);
+  color: var(--color-dark-blue);
   background-color: var(--color-white);
-  border-color: var(--color-red);
+  border-color: var(--color-dark-blue);
 }
 
 /* ------------------------------------- */
 
 .head-main {
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
   color: var(--color-white);
   padding: 20px 60px;
   position: relative;

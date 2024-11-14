@@ -1,6 +1,7 @@
 <?php
-require "proteccion.php"
+require "proteccion_admin.php"
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,7 @@ require "proteccion.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3DPrinter Explorer 2024</title>
-  <link rel="stylesheet" href="../../css/main/styles-main.css">
+  <link rel="stylesheet" href="../../../css/main/styles-main-admin.css">
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,7 +23,7 @@ require "proteccion.php"
       ?>
     </h1>
     <a href="#" class="logo"><i class="fa-solid fa-binoculars"></i></a>
-    <a href="cerrarsesion.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <a href="cerrarsesion_admin.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
   </header>
 
   <!-- <section class="sect-main">
@@ -38,7 +39,7 @@ require "proteccion.php"
   </section> -->
 
   <?php
-  include "menu.php";
+  include "menu_admin.php";
   ?>
 
   <article class="arti-main">

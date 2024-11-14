@@ -121,11 +121,11 @@ button {
 }
 
 .div-sec-registro {
-  /* border: 1px red solid; */
-  padding: 40px;
-  max-width: 500px;
-  width: 420px;
+  /* padding: 40px; */
+  width: 350px;
   background-color: var(--color-dark-blue);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #00000060;
 }
 
 .logo {

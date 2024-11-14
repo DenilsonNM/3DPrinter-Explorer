@@ -1,3 +1,7 @@
+<?php
+require "proteccion.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
   <header class="head-main">
     <h1>Sistema Experto</h1>
     <a href="main.php" class="logo"><i class="fa-solid fa-binoculars"></i></a>
-    <a href="../../index.html" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <a href="cerrarsesion.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
   </header>
 
   <?php

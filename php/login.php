@@ -16,7 +16,7 @@
     <section class="sec-registro">
         <div class="div-sec-registro ancho">
             <article class="logo">
-                <a href="login.html"><i class="fa-solid fa-binoculars"></i></a>
+                <a href="#"><i class="fa-solid fa-binoculars"></i></a>
             </article>
 
             <article class="art-registro">
