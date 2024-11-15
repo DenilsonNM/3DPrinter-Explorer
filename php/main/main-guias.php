@@ -26,7 +26,9 @@ require "proteccion.php"
   ?>
 
   <article class="arti-main">
-    <h2>3DPrinter Explorer</h2>
+    <a href="https://grabcad.com/library" target="_blank">Repo GRABCAD</a>
+    <a href="https://grabcad.com/tutorials" target="_blank">Tutos GRABCAD</a>
+    <iframe src=" ../../docs/FLUJOGRAMA DE PROYECTO INTEGRADOR.pdf" width="600" height="400" title="PDF Viewer"></iframe>
   </article>
 
 </body>

@@ -28,11 +28,12 @@ require "proteccion.php"
   <article class="arti-main">
 
     <details class="arti-detail">
-      <summary class="arti-sumary">Instituto Tecnológico de Mérida</summary>
+      <summary class="arti-sumary">[Nombre de impresora] - -Instituto Tecnológico de Mérida</summary>
       <div class="arti-sum-div">
         <p>Instituto Tecnológico de Mérida (Campus Norte), del departamento de ingeniería eléctrica y electrónica.
           Ubicado en la
           Avenida Tecnológico (Calle 60) Sn, 97118 Mérida, Yucatán México.</p>
+        <br>
         <div class="sum-div-map">
         </div>
       </div>

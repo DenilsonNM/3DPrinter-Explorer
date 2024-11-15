@@ -176,7 +176,6 @@ span {
   gap: 30px;
 }
 
-
 /* ----------SISTEMA EXPERTO------------- */
 
 .sisexp {
@@ -185,8 +184,7 @@ span {
   border-radius: 10px;
 }
 
-
-/* --------CORREO Y UBICACIONES----------- */
+/* ---------------CORREO---------------- */
 
 .arti-detail {
   border: 2px var(--color-dark-blue) solid;
@@ -194,8 +192,6 @@ span {
 }
 
 .arti-sumary {
-  /* background-color: var(--color-dark-blue); */
-  /* color: var(--color-white); */
   border-radius: 5px 5px 0px 0px;
   font-size: 24px;
   padding: 20px 50px;
@@ -221,13 +217,18 @@ summary::marker {
   border-top: 2px var(--color-dark-blue) solid;
 }
 
-.sum-div-map {
-  border: 2px var(--color-dark-blue) solid;
-  height: 200px;
-  width: 200px;
-}
-
 .arti-sum-btn {
   padding: 0px 60px;
   padding-bottom: 30px;
 }
+
+/* --------------UBICACIONES------------ */
+
+.sum-div-map {
+  border: 2px var(--color-dark-blue) solid;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* ----------GUIAS Y TUTORIALES--------- */
