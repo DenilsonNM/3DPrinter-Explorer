@@ -53,6 +53,7 @@ button {
   border: 2px var(--color-dark-blue) solid;
   border-radius: 10px;
   font-size: 16px;
+  transition: all .10s linear;
 }
 
 .button-1:hover {
@@ -70,6 +71,7 @@ button {
   border: 2px var(--color-blue) solid;
   border-radius: 10px;
   font-size: 16px;
+  transition: all .10s linear;
 }
 
 .button-2:hover {
@@ -87,6 +89,7 @@ button {
   border: 2px var(--color-red) solid;
   border-radius: 10px;
   font-size: 16px;
+  transition: all .10s linear;
 }
 
 .button-3:hover {
