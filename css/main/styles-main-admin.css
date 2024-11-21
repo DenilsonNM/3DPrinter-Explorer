@@ -173,11 +173,29 @@ summary {
   font-size: 24px;
 }
 
+.nav-main p {
+  transition: all .10s linear;
+}
+
 .nav-main li:hover p {
   color: var(--color-white);
 }
 
 /* ------------------------------------- */
+
+.arti-main-intro {
+  /* margin-left: 160px; */
+  /* margin-top: 85px; */
+  position: absolute;
+  top: 325px;
+  left: 300px;
+}
+
+.arti-main-intro h1 {
+  font-size: 100px;
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.100);
+}
+
 
 .arti-main {
   /* width: 85%; */
@@ -197,8 +215,7 @@ summary {
   border-radius: 10px;
 }
 
-
-/* --------CORREO Y UBICACIONES----------- */
+/* ---------------CORREO---------------- */
 
 .arti-detail {
   border: 2px var(--color-dark-blue) solid;
@@ -211,6 +228,7 @@ summary {
   border-radius: 5px 5px 0px 0px;
   font-size: 24px;
   padding: 20px 50px;
+  transition: all .10s linear;
 }
 
 summary::marker {
@@ -233,13 +251,25 @@ summary::marker {
   border-top: 2px var(--color-dark-blue) solid;
 }
 
-.sum-div-map {
-  border: 2px var(--color-dark-blue) solid;
-  height: 200px;
-  width: 200px;
-}
-
 .arti-sum-btn {
   padding: 0px 60px;
   padding-bottom: 30px;
 }
+
+/* --------------UBICACIONES------------ */
+
+.sum-div-map {
+  border: 2px var(--color-dark-blue) solid;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.sum-div-map iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* filter: grayscale(100%); */
+}
+
+/* ----------GUIAS Y TUTORIALES--------- */
