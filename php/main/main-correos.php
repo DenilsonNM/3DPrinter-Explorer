@@ -28,7 +28,7 @@ require "proteccion.php"
   <article class="arti-main">
 
     <details class="arti-detail">
-      <summary class="arti-sumary">EDI - Instituto Tecnológico de Mérida</summary>
+      <summary class="arti-sumary">NCEI - Instituto Tecnológico de Mérida</summary>
       <div class="arti-sum-div">
         <p><span>Encargado:</span> Guillermo Nadal</p>
         <p><span>Correo del encargado:</span> gnadalgonzalez@gmail.com</p>
@@ -39,7 +39,7 @@ require "proteccion.php"
     </details>
 
     <details class="arti-detail">
-      <summary class="arti-sumary">EDI - Universidad Modelo</summary>
+      <summary class="arti-sumary">Cl - Universidad Modelo</summary>
       <div class="arti-sum-div">
         <p><span>Encargado:</span> Francisco Roura</p>
         <p><span>Correo del encargado:</span> roura@modelo.edu.mx</p>
@@ -50,7 +50,7 @@ require "proteccion.php"
     </details>
 
     <details class="arti-detail">
-      <summary class="arti-sumary">EDI - Universidad Anáhuac Mayab</summary>
+      <summary class="arti-sumary">LIEET - Universidad Anáhuac Mayab</summary>
       <div class="arti-sum-div">
         <p><span>Encargado:</span> Mariana González</p>
         <p><span>Correo del encargado:</span> mariana.gonzalez@anahuac.mx</p>

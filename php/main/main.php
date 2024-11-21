@@ -25,24 +25,12 @@ require "proteccion.php"
     <a href="cerrarsesion.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
   </header>
 
-  <!-- <section class="sect-main">
-    <nav class="nav-main">
-      <ul>
-        <li><a href="main-ubicaciones.html" class="button-1"><i class="fa-solid fa-location-dot"></i></a></li>
-        <li><a href="#" class="button-1"><i class="fa-solid fa-brain"></i></a></li>
-        <li><a href="#" class="button-1"><i class="fa-solid fa-book-bookmark"></i></a></li>
-        <li><a href="#" class="button-1"><i class="fa-solid fa-envelope"></i></a></li>
-        <li><a href="#" class="button-1"><i class="fa-solid fa-database"></i></a></li>
-      </ul>
-    </nav>
-  </section> -->
-
   <?php
   include "menu.php";
   ?>
 
-  <article class="arti-main">
-    <h2>3DPrinter Explorer</h2>
+  <article class="arti-main-intro">
+    <h1>3DPrinter Explorer</h1>
   </article>
 
 </body>

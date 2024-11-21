@@ -28,7 +28,7 @@ require "proteccion.php"
   <article class="arti-main">
 
     <details class="arti-detail">
-      <summary class="arti-sumary">NCIE - Instituto Tecnológico de Mérida</summary>
+      <summary class="arti-sumary">NCEI - Instituto Tecnológico de Mérida</summary>
       <div class="arti-sum-div">
         <p>aqui va la tabla wey</p>
       </div>
@@ -42,7 +42,7 @@ require "proteccion.php"
     </details>
 
     <details class="arti-detail">
-      <summary class="arti-sumary">LIEET - Universidad Anáhuac Mayab</summary>
+      <summary class="arti-sumary">LIIET - Universidad Anáhuac Mayab</summary>
       <div class="arti-sum-div">
         <p>aqui va la tabla wey</p>
       </div>
