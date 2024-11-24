@@ -25,6 +25,22 @@ require "proteccion.php"
   <?php
   include "menu.php";
   ?>
+
+
+  <article class="arti-main">
+    <figure>
+      <p>REPOSITORIO GRABCAD</p>
+      <a href="https://grabcad.com/library" target="_blank"><img src="../../pictures/grabcad-removebg-preview.png" alt=""></a>
+    </figure>
+
+    <figure>
+      <p>REPOSITORIO VIDEOS GRABCAD</p>
+      <a href="https://grabcad.com/tutorials" target="_blank"><img src="../../pictures/grabcad-removebg-preview.png" alt=""></a>
+    </figure>
+  </article>
+
+
+
   <section class="sec-pdf ancho">
     <article class="art-pdf" id="btn_modal">
       <figure>
@@ -91,13 +107,6 @@ require "proteccion.php"
       </article>
     </section>
 
-
-  
-
-  <article class="arti-main">
-    <a href="https://grabcad.com/library" target="_blank">Repo GRABCAD</a>
-    <a href="https://grabcad.com/tutorials" target="_blank">Tutos GRABCAD</a>
-  </article>
 
   <script>
     // SCRIPT DOCUMENTO 1
