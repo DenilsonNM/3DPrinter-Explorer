@@ -3,6 +3,7 @@
   /* border: 1px red solid; */
   margin: auto;
 }
+
 :root {
   --color-blue: #388ba5;
   --color-dark-blue: #232e33;
@@ -10,41 +11,64 @@
   --color-red: #a53838;
   --main-font: "Roboto", Arial, sans-serif;
 }
+
+/* ------------------------------------- */
+
 .sec-pdf {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: stretch;
-  gap: 50px;
   margin-left: 160px;
 }
+
 .art-pdf {
   margin-top: 30px;
-  /* border: 1px red solid; */
+  cursor: pointer;
 }
+
+
 .art-pdf figure {
-  border: 3px var(--color-dark-blue) solid;
-  padding: 15px;
+  border: 2px var(--color-dark-blue) solid;
   width: 300px;
   border-radius: 10px 10px 0px 0px;
-  height: 50%;
+  height: 200px;
+  overflow: hidden;
 }
+
 .art-pdf img {
   width: 100%;
   height: 100%;
   display: block;
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
+  transition: all .10s linear;
 }
+
 .pdf-info {
   max-width: 300px;
   border-radius: 0px 0px 10px 10px;
-  background-color: var(--color-dark-blue);
+  border: 2px var(--color-dark-blue) solid;
+  border-top: none;
   padding: 15px;
-  height: 50%;
+  height: 150px;
+  color: var(--color-dark-blue);
+  transition: all .10s linear;
 }
-.pdf-info p {
+
+.art-pdf:hover .pdf-info {
+  background-color: var(--color-dark-blue);
   color: var(--color-white);
 }
-.pdf-info a {
+
+.art-pdf:hover img {
+  transform: scale(105%);
+}
+
+/* .pdf-info p {
+  color: var(--color-white);
+} */
+
+/* .pdf-info a {
   padding: 10px 20px;
   display: inline-block;
   text-decoration: none;
@@ -53,89 +77,114 @@
   border: 1px var(--color-white) solid;
   border-radius: 10px;
 }
+
 .pdf-info a:hover {
   background-color: var(--color-white);
   color: var(--color-dark-blue);
   border: 1px var(--color-dark-blue) solid;
-}
+} */
 
-.modal iframe {
-  width: 900px;
-  height: 95%;
-  margin: auto;
-  /* border: 1px red solid ; */
-  text-align: center;
-}
+/* ------------------------------------- */
 
 .modal_padre {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
+
 .modal {
   /* border: 1px red solid; */
   width: 70%;
-  height: 100%;
-  padding: 10px;
-  background-color: white;
-  height: 90vh;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  background-color: var(--color-white);
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
 }
+
+.modal iframe {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  border: 1px var(--color-dark-blue) solid;
+  border-radius: 10px;
+}
+
 .mostrar {
   display: flex;
 }
 
-.cerrar a {
-  color: var(--color-red);
-  text-decoration: none;
-  margin-bottom: 5px;
+.cerrar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 8px;
 }
 
-.arti-main {
-  /* width: 85%; */
-  margin-left: 160px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.arti-main a {
-  /* border: 1px red solid; */
+.cerrar a {
   display: inline-block;
-  border-radius: 10px;
-  margin-left: 65px;
-  margin: auto;
-  border: 2px var(--color-white) dashed;
-  padding: 10px;
+  color: var(--color-red);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ------------------------------------- */
+
+.arti-main {
+  flex-direction: row;
+  padding: 25px 55px;
 }
 
 .arti-main figure {
   /* border: 1px red solid; */
-  max-width: 1000px;
+  max-width: 1010px;
   margin: auto;
   padding: 10px;
-  background-color: var(--color-dark-blue);
+  border: 2px var(--color-dark-blue) solid;
+  color: var(--color-dark-blue);
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-items: center;
   gap: 10px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
+
 }
-.arti-main p {
-  color: var(--color-white);
-  font-weight: bold;
+
+.arti-main img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all .10s linear;
+}
+
+.arti-main a {
+  /* border: 1px red solid; */
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 65px;
+  margin: auto;
+  /* border: 2px var(--color-white) dashed; */
+  padding: 10px;
+  background-color: var(--color-dark-blue);
+  overflow: hidden;
+}
+
+.arti-main a:hover img {
+  transform: scale(105%);
 }

@@ -196,7 +196,14 @@ summary {
   text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.100);
 }
 
-
+.arti-main {
+  /* width: 85%; */
+  margin-left: 160px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 /* ----------SISTEMA EXPERTO------------- */
 
