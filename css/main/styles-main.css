@@ -46,6 +46,10 @@ details[open] summary {
   color: var(--color-white);
 }
 
+details[open] {
+  border-radius: 10px 10px 0px 0px;
+}
+
 summary {
   cursor: pointer;
 }
@@ -269,4 +273,38 @@ summary::marker {
   /* filter: grayscale(100%); */
 }
 
-/* ----------GUIAS Y TUTORIALES--------- */
+/* ----------CAPACIDAD INSTALADA-------- */
+
+
+.arti-sum-div2 {}
+
+.table_cap {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.table_cap th,
+td {
+  text-align: center;
+  border: 1px var(--color-dark-blue) solid;
+  padding: 10px;
+}
+
+.table_cap:first-child th {
+  border-top: none;
+}
+
+.table_cap:last-child td {
+  border-bottom: none;
+}
+
+.table_cap td:first-child,
+.table_cap th:first-child {
+  border-left: none;
+}
+
+.table_cap td:last-child,
+.table_cap th:last-child {
+  border-right: none;
+}

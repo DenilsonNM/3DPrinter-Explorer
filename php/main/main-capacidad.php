@@ -9,7 +9,7 @@ require "proteccion.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3DPrinter Explorer 2024</title>
-  <link rel="stylesheet" href="../../css/main/styles-main.css">
+  <link rel="stylesheet" href="../../css/main/styles-main.css?v=1">
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,8 +29,36 @@ require "proteccion.php"
 
     <details class="arti-detail">
       <summary class="arti-sumary">NCEI - Instituto Tecnológico de Mérida</summary>
-      <div class="arti-sum-div">
-        <p>aqui va la tabla wey</p>
+
+      <div class="arti-sum-div2">
+
+        <table class="table_cap">
+          <thead>
+            <tr>
+              <th>EDI</th>
+              <th>Tecnología</th>
+              <th>Máquina</th>
+              <th>Cantidad Funcional</th>
+              <th>Cantidad No Funcional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </details>
 
