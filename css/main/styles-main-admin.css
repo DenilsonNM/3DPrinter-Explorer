@@ -46,6 +46,10 @@ details[open] summary {
   color: var(--color-white);
 }
 
+details[open] {
+  border-radius: 10px 10px 0px 0px;
+}
+
 summary {
   cursor: pointer;
 }
@@ -75,12 +79,12 @@ summary {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  padding: 5px 20px;
+  padding: 5px 15px;
   color: var(--color-white);
   background-color: var(--color-blue);
   border: 2px var(--color-blue) solid;
   border-radius: 8px;
-  min-width: 100px;
+  /* min-width: 100px; */
   transition: all .10s linear;
 }
 
@@ -107,6 +111,25 @@ summary {
   color: var(--color-dark-blue);
   background-color: var(--color-white);
   border-color: var(--color-dark-blue);
+}
+
+.button-4 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 15px;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  border: 2px var(--color-red) solid;
+  border-radius: 8px;
+  /* min-width: 100px; */
+  transition: all .10s linear;
+}
+
+.button-4:hover {
+  color: var(--color-red);
+  background-color: var(--color-white);
+  border-color: var(--color-red);
 }
 
 /* ------------------------------------- */
@@ -205,24 +228,12 @@ summary {
   gap: 30px;
 }
 
-/* ----------SISTEMA EXPERTO------------- */
-
-.sisexp {
-  border: 2px var(--color-dark-blue) solid;
-  height: 500px;
-  border-radius: 10px;
-}
-
-/* ---------------CORREO---------------- */
-
 .arti-detail {
   border: 2px var(--color-dark-blue) solid;
   border-radius: 10px;
 }
 
 .arti-sumary {
-  /* background-color: var(--color-dark-blue); */
-  /* color: var(--color-white); */
   border-radius: 5px 5px 0px 0px;
   font-size: 24px;
   padding: 20px 50px;
@@ -243,31 +254,56 @@ summary::marker {
   color: var(--color-white);
 }
 
-.arti-sum-div {
-  padding: 30px 60px;
-  line-height: 26px;
-  border-top: 2px var(--color-dark-blue) solid;
-}
+.arti-sum-div2 {}
 
-.arti-sum-btn {
-  padding: 0px 60px;
-  padding-bottom: 30px;
-}
+/* ------------------------------------- */
 
-/* --------------UBICACIONES------------ */
-
-.sum-div-map {
-  border: 2px var(--color-dark-blue) solid;
-  height: 300px;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.sum-div-map iframe {
-  border-radius: 10px;
+.table_cap {
   width: 100%;
   height: 100%;
-  /* filter: grayscale(100%); */
+  border-collapse: collapse;
 }
 
-/* ----------GUIAS Y TUTORIALES--------- */
+.table_cap th,
+td {
+  text-align: center;
+  border: 1px var(--color-dark-blue) solid;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.table_cap:first-child th {
+  border-top: none;
+}
+
+.table_cap:last-child td {
+  border-bottom: none;
+}
+
+.table_cap td:first-child,
+.table_cap th:first-child {
+  border-left: none;
+}
+
+.table_cap td:last-child,
+.table_cap th:last-child {
+  border-right: none;
+}
+
+/* ------------------------------------- */
+
+.div-alert-registro {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.alert-registro {
+  background-color: #232e33d2;
+  color: var(--color-white);
+  text-align: center;
+  position: absolute;
+  top: 50vh;
+  width: 100%;
+  padding: 20px;
+}
