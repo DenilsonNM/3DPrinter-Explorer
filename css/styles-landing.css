@@ -123,6 +123,10 @@ button {
   align-items: center;
 }
 
+.nav-header{
+  display: flex;
+}
+
 .nav-header a {
   display: inline-block;
   text-decoration: none;
@@ -240,4 +244,17 @@ ul {
   height: 60px;
   background-color: var(--color-dark-blue);
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 480px) {
+  .menu-header {
+    flex-direction: column;
+    /* display: none; */
+  }
+  
+  .nav-header{
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
 }
