@@ -26,7 +26,9 @@ require "proteccion.php"
   ?>
 
   <article class="arti-main">
-    <div class="sisexp"></div>
+    <div class="sisexp">
+      <img src="../../pictures/xd.jpg" alt="">
+    </div>
   </article>
 
 </body>
