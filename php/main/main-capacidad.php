@@ -27,62 +27,164 @@ require "proteccion.php"
 
   <article class="arti-main">
 
+    <?php
+    require "../conexion.php";
+    ?>
+
     <details class="arti-detail">
       <summary class="arti-sumary">NCEI - Instituto Tecnológico de Mérida</summary>
 
       <div class="arti-sum-div2">
 
         <table class="table_cap">
+
           <thead>
             <tr>
-              <th>EDI</th>
-              <th>Tecnología</th>
               <th>Máquina</th>
+              <th>Tecnología</th>
               <th>Cantidad Funcional</th>
               <th>Cantidad No Funcional</th>
             </tr>
           </thead>
+
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>2</td>
-              <td>2</td>
-              <td>2</td>
-              <td>2</td>
-            </tr>
+            <?php
+            $cap_ins = "SELECT * FROM capacidad WHERE nom_edi = 'NCEI' ORDER BY id_maquina ASC";
+            $resultado = mysqli_query($conectar, $cap_ins);
+            while ($row = mysqli_fetch_assoc($resultado)) {
+            ?>
+              <tr>
+                <td><?php echo $row["maquina"]; ?></td>
+                <td><?php echo $row["tecnologia"]; ?></td>
+                <td><?php echo $row["cant_fun"]; ?></td>
+                <td><?php echo $row["cant_no_fun"]; ?></td>
+              </tr>
+            <?php
+            }
+            mysqli_free_result($resultado);
+            ?>
           </tbody>
         </table>
       </div>
     </details>
 
+    <!-- ------------------------------------- -->
+
     <details class="arti-detail">
-      <summary class="arti-sumary">Cl - Universidad Modelo</summary>
-      <div class="arti-sum-div">
-        <p>aqui va la tabla wey</p>
+      <summary class="arti-sumary">CI - Universidad Modelo</summary>
+
+      <div class="arti-sum-div2">
+
+        <table class="table_cap">
+
+          <thead>
+            <tr>
+              <th>Máquina</th>
+              <th>Tecnología</th>
+              <th>Cantidad Funcional</th>
+              <th>Cantidad No Funcional</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <?php
+            $cap_ins = "SELECT * FROM capacidad WHERE nom_edi = 'CI' ORDER BY id_maquina ASC";
+            $resultado = mysqli_query($conectar, $cap_ins);
+            while ($row = mysqli_fetch_assoc($resultado)) {
+            ?>
+              <tr>
+                <td><?php echo $row["maquina"]; ?></td>
+                <td><?php echo $row["tecnologia"]; ?></td>
+                <td><?php echo $row["cant_fun"]; ?></td>
+                <td><?php echo $row["cant_no_fun"]; ?></td>
+              </tr>
+            <?php
+            }
+            mysqli_free_result($resultado);
+            ?>
+          </tbody>
+        </table>
       </div>
     </details>
+
+    <!-- ------------------------------------- -->
 
     <details class="arti-detail">
       <summary class="arti-sumary">LIIET - Universidad Anáhuac Mayab</summary>
-      <div class="arti-sum-div">
-        <p>aqui va la tabla wey</p>
+      <div class="arti-sum-div2">
+        <table class="table_cap">
+
+          <thead>
+            <tr>
+              <th>Máquina</th>
+              <th>Tecnología</th>
+              <th>Cantidad Funcional</th>
+              <th>Cantidad No Funcional</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <?php
+            $cap_ins = "SELECT * FROM capacidad WHERE nom_edi = 'LIIET' ORDER BY id_maquina ASC";
+            $resultado = mysqli_query($conectar, $cap_ins);
+            while ($row = mysqli_fetch_assoc($resultado)) {
+            ?>
+              <tr>
+                <td><?php echo $row["maquina"]; ?></td>
+                <td><?php echo $row["tecnologia"]; ?></td>
+                <td><?php echo $row["cant_fun"]; ?></td>
+                <td><?php echo $row["cant_no_fun"]; ?></td>
+              </tr>
+            <?php
+            }
+            mysqli_free_result($resultado);
+            ?>
+          </tbody>
+        </table>
       </div>
     </details>
 
+    <!-- ------------------------------------- -->
+
     <details class="arti-detail">
       <summary class="arti-sumary">Todos los EDI</summary>
-      <div class="arti-sum-div">
-        <p>aqui va la tabla wey</p>
+      <div class="arti-sum-div2">
+        <table class="table_cap">
+
+          <thead>
+            <tr>
+              <th>EDI</th>
+              <th>Máquina</th>
+              <th>Tecnología</th>
+              <th>Cantidad Funcional</th>
+              <th>Cantidad No Funcional</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <?php
+            $cap_ins = "SELECT * FROM capacidad ORDER BY id_maquina ASC";
+            $resultado = mysqli_query($conectar, $cap_ins);
+            while ($row = mysqli_fetch_assoc($resultado)) {
+            ?>
+              <tr>
+                <td><?php echo $row["nom_edi"]; ?></td>
+                <td><?php echo $row["maquina"]; ?></td>
+                <td><?php echo $row["tecnologia"]; ?></td>
+                <td><?php echo $row["cant_fun"]; ?></td>
+                <td><?php echo $row["cant_no_fun"]; ?></td>
+              </tr>
+            <?php
+            }
+            mysqli_free_result($resultado);
+            ?>
+          </tbody>
+        </table>
       </div>
     </details>
+
   </article>
+
 
 </body>
 
