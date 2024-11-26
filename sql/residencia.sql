@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-11-2024 a las 22:58:50
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.0.30
+-- Tiempo de generación: 25-11-2024 a las 20:21:21
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,6 +24,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `capacidad`
+--
+
+CREATE TABLE `capacidad` (
+  `id_maquina` int(100) NOT NULL,
+  `maquina` varchar(100) NOT NULL,
+  `tecnologia` varchar(100) NOT NULL,
+  `cant_fun` varchar(50) NOT NULL,
+  `cant_no_fun` varchar(50) NOT NULL,
+  `nom_edi` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `capacidad`
+--
+
+INSERT INTO `capacidad` (`id_maquina`, `maquina`, `tecnologia`, `cant_fun`, `cant_no_fun`, `nom_edi`) VALUES
+(1, 'Wanhao duplicator 9', 'Extrusión de material (Impresión 3D)', '-', '1', 'CI'),
+(2, 'Creality Endor-3 V2', 'Extrusión de material (Impresión 3D)', '4', '-', 'CI'),
+(3, 'Formlabs Form2', 'Fotopolimerización (Impresión 3D de resina)', '4', '-', 'LIIET'),
+(4, 'Lulzbot Taz Pro', 'Extrusión de material (Impresión 3D)', '1', '-', 'LIIET'),
+(5, 'Wanhao duplicator 4s', 'Extrusión de material (Impresión 3D)', '1', '-', 'LIIET'),
+(6, 'Ultimaker', 'Extrusión de material (Impresión 3D)', '1', '-', 'LIIET'),
+(7, 'M-UV 001 Maker Mex', 'Extrusión de material (Impresión 3D)', '1', '-', 'LIIET'),
+(8, 'I3D 1', 'Fotopolimerización (Impresión 3D de resina)', '1', '-', 'LIIET'),
+(9, 'I3D 2', 'Fotopolimerización (Impresión 3D de resina)', '1', '-', 'LIIET'),
+(10, 'Impresora 3D Raise 32 N2 plus', 'Extrusión de material (Impresión 3D)', '-', '1', 'NCEI'),
+(11, 'Impresora 3D Zortrax M200', 'Extrusión de material (Impresión 3D)', '2', '1', 'NCEI');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `carreras`
 --
 
@@ -31,7 +63,7 @@ CREATE TABLE `carreras` (
   `id_carrera` int(10) NOT NULL,
   `carrera` varchar(50) NOT NULL,
   `id_universidad` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `carreras`
@@ -111,10 +143,10 @@ INSERT INTO `carreras` (`id_carrera`, `carrera`, `id_universidad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `registo`
+-- Estructura de tabla para la tabla `registro`
 --
 
-CREATE TABLE `registo` (
+CREATE TABLE `registro` (
   `id_registro` int(100) NOT NULL,
   `nombres` varchar(50) NOT NULL,
   `p_apellido` varchar(50) NOT NULL,
@@ -127,22 +159,17 @@ CREATE TABLE `registo` (
   `semestre` int(20) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `contrasena` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `registo`
+-- Volcado de datos para la tabla `registro`
 --
 
-INSERT INTO `registo` (`id_registro`, `nombres`, `p_apellido`, `s_apellido`, `correo`, `n_celular`, `matricula`, `institucion`, `carrera`, `semestre`, `usuario`, `contrasena`) VALUES
+INSERT INTO `registro` (`id_registro`, `nombres`, `p_apellido`, `s_apellido`, `correo`, `n_celular`, `matricula`, `institucion`, `carrera`, `semestre`, `usuario`, `contrasena`) VALUES
 (1, 'Denilson Jesus', 'Nuñez', 'Morales', 'denilson31@gmail.com', 9997401434, 'E19080852', 'Instituto Tecnológico de Mérida', 'Ingenieria en Sistemas Computacionales', 1, 'Denilson', '123D'),
 (2, 'Luciano de la Cruz', 'Chi', 'Chan', 'luciano21@gmail.com', 9998403256, 'e20080852', 'Instituto Tecnológico de Mérida', 'Ingenieria en Sistemas Computacionales', 1, 'Lucho', '321L'),
 (3, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', 'Instituto Tecnológico de Mérida', 'Ingenieria en Sistemas Computacionales', 1, 'Luciano', '1234'),
-(4, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', '1', 'Ingenieria en Sistemas Computacionales', 1, 'Prueba1', '1234'),
-(5, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', '1', 'Ingenieria en Sistemas Computacionales', 1, 'Prueba1', '1234'),
-(6, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', '2', 'Ingenieria en Sistemas Computacionales', 1, 'prueba2', '1234'),
-(7, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', 'Instituto Tecnologico de Merida', 'Ingenieria en Sistemas Computacionales', 1, 'prueba1 ', '1234'),
-(8, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', 'Universidad Modelo', 'Ingenieria en Sistemas Computacionales', 1, 'prueba1 ', '1234'),
-(9, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', '2', 'Ingenieria Biomedica', 1, 'prueba7', '1223');
+(4, 'LUCIANO', 'Chi', 'Chan', 'le20080460@merida.tecnm.mx', 9993535094, 'e20080460', '1', 'Ingenieria en Sistemas Computacionales', 1, 'Prueba1', '1234');
 
 -- --------------------------------------------------------
 
@@ -153,7 +180,7 @@ INSERT INTO `registo` (`id_registro`, `nombres`, `p_apellido`, `s_apellido`, `co
 CREATE TABLE `universidades` (
   `id_universidad` int(3) NOT NULL,
   `universidad` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `universidades`
@@ -169,6 +196,12 @@ INSERT INTO `universidades` (`id_universidad`, `universidad`) VALUES
 --
 
 --
+-- Indices de la tabla `capacidad`
+--
+ALTER TABLE `capacidad`
+  ADD PRIMARY KEY (`id_maquina`);
+
+--
 -- Indices de la tabla `carreras`
 --
 ALTER TABLE `carreras`
@@ -176,9 +209,9 @@ ALTER TABLE `carreras`
   ADD KEY `id_universidad` (`id_universidad`);
 
 --
--- Indices de la tabla `registo`
+-- Indices de la tabla `registro`
 --
-ALTER TABLE `registo`
+ALTER TABLE `registro`
   ADD PRIMARY KEY (`id_registro`);
 
 --
@@ -192,15 +225,21 @@ ALTER TABLE `universidades`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `capacidad`
+--
+ALTER TABLE `capacidad`
+  MODIFY `id_maquina` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT de la tabla `carreras`
 --
 ALTER TABLE `carreras`
   MODIFY `id_carrera` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
--- AUTO_INCREMENT de la tabla `registo`
+-- AUTO_INCREMENT de la tabla `registro`
 --
-ALTER TABLE `registo`
+ALTER TABLE `registro`
   MODIFY `id_registro` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
