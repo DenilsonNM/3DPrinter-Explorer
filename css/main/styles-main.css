@@ -259,11 +259,30 @@ summary::marker {
 
 /* --------------UBICACIONES------------ */
 
+.sum-div-map-img {
+  display: flex;
+  /* gap: 50px; */
+  justify-content: space-evenly;
+}
+
 .sum-div-map {
   border: 2px var(--color-dark-blue) solid;
   height: 300px;
   width: 300px;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.sum-div-map img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 7px;
+  transition: all .20s linear;
+}
+
+.sum-div-map img:hover {
+  transform: scale(105%);
 }
 
 .sum-div-map iframe {
