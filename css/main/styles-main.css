@@ -154,7 +154,7 @@ summary {
 .nav-main {
   background-color: var(--color-dark-blue);
   padding: 0px 10px;
-  padding-top: 90px;
+  padding-top: 50px;
   /* width: 15%; */
   display: flex;
   justify-content: center;
