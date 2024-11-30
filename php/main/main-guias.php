@@ -32,8 +32,8 @@ require "proteccion.php"
         <img src="..\..\pictures\guiaM1.png" alt="">
       </figure>
       <div class="pdf-info">
-        <p><span>TITULO:</span> Módulo 1</p><br>
-        <p><span>DESCRIPCIÓN:</span> Introducción al modelado 3D</p>
+        <p><span>TITULO:</span> Guía para Generar Modelos 3D CAD</p><br>
+        <p><span>DESCRIPCIÓN:</span> Aprende paso a paso a crear modelos 3D en software CAD.</p>
       </div>
     </article>
 
@@ -42,8 +42,8 @@ require "proteccion.php"
         <img src="..\..\pictures\guiaM2.png" alt="">
       </figure>
       <div class="pdf-info">
-        <p><span>TITULO:</span> Módulo 2</p><br>
-        <p><span>DESCRIPCIÓN:</span> Herramientas de croquizado y operaciones básicas</p>
+        <p><span>TITULO:</span> Guía para Croquizar en 2D en Software CAD</p><br>
+        <p><span>DESCRIPCIÓN:</span> Domina las bases del diseño 2D con esta guía práctica.</p>
       </div>
     </article>
 
@@ -52,10 +52,8 @@ require "proteccion.php"
         <img src="..\..\pictures\guia_STL.png" alt="">
       </figure>
       <div class="pdf-info">
-        <p><span>TITULO:</span> Guía conversión a .stl
-        </p><br>
-        <p><span>DESCRIPCIÓN:</span> ¿Cómo convierto mi archivo CAD a .stl (para imprimir 3D)?
-        </p>
+        <p><span>TITULO:</span> Guía para Convertir Modelos 3D CAD a Formato .STL</p><br>
+        <p><span>DESCRIPCIÓN:</span> Convierte tus diseños en archivos listos para impresión 3D.</p>
       </div>
     </article>
   </section>
@@ -67,7 +65,7 @@ require "proteccion.php"
   <section class="modal_padre" id="cont_modal1">
     <article class="modal">
       <div class="cerrar">
-        <h2>Módulo 1 - Introducción al modelado 3D</h2>
+        <h2>Guía para Generar Modelos 3D CAD (GUIA DE APOYO M3D REV.1)</h2>
         <a href="#" id="cerrar_modal1"><i class="fa-solid fa-circle-xmark"></i></a>
       </div>
       <iframe src=" ../../docs/modulo1.pdf" title="PDF Viewer"></iframe>
@@ -79,7 +77,7 @@ require "proteccion.php"
   <section class="modal_padre" id="cont_modal2">
     <article class="modal">
       <div class="cerrar">
-        <h2>Módulo 2 - Herramientas de croquizado y operaciones básicas</h2>
+        <h2>Guía para Croquizar en 2D en Software CAD (MÓDULO 1 REV.2)</h2>
         <a href="#" id="cerrar_modal2"><i class="fa-solid fa-circle-xmark"></i></a>
       </div>
       <iframe src=" ../../docs/modulo2.pdf" title="PDF Viewer"></iframe>
@@ -91,7 +89,7 @@ require "proteccion.php"
   <section class="modal_padre" id="cont_modal3">
     <article class="modal">
       <div class="cerrar">
-        <h2>Guía conversión a .stl</h2>
+        <h2>Guía para Convertir Modelos 3D CAD a Formato .STL (GUÍA STL)</h2>
         <a href="#" id="cerrar_modal3"><i class="fa-solid fa-circle-xmark"></i></a>
       </div>
       <iframe src=" ../../docs/GUIA_STL.pdf" title="PDF Viewer"></iframe>

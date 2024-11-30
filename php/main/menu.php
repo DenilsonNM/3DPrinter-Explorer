@@ -17,7 +17,7 @@
           <p>Capacidad</p><a href="main-capacidad.php" class="button-1"><i class="fa-solid fa-database"></i></a>
         </li>
         <li>
-          <p>Cronometro</p><a href="main-cronometro.php" class="button-1"><i class="fa-regular fa-clock"></i></a>
+          <p>Cronómetro</p><a href="main-cronometro.php" class="button-1"><i class="fa-solid fa-clock"></i></a>
         </li>
       </ul>
     </nav>

@@ -2,32 +2,32 @@
     max-width: 900px;
     /* border: 1px red solid; */
     margin: auto;
-  }
-  
-  :root {
+}
+
+:root {
     --color-blue: #388ba5;
     --color-dark-blue: #232e33;
     --color-white: #f1f1f1;
     --color-red: #a53838;
     --main-font: "Roboto", Arial, sans-serif;
-  }
-  /* ------------------------------------------------------ */
+}
+
+/* ------------------------------------------------------ */
 
 .cronometro-container {
     text-align: center;
-    background: #fff;
+    background: var(--color-white);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 330px;
-    margin-top: 200px;
-    border: 2px var(--color-blue) solid;
+    margin-left: 220px;
+    margin-top: 50px;
+    border: 2px var(--color-dark-blue) solid;
 }
 
 #cronometro {
     font-size: 2rem;
     margin: 20px 0;
-    color: #333;
 }
 
 .botones button {
@@ -37,19 +37,22 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    background-color: var(--color-dark-blue);
-    border: var(--color-white) 2px solid;
-    color: white;
+    transition: all .20s linear;
+    background-color: var(--color-blue);
+    border: var(--color-blue) 2px solid;
+    color: var(--color-white);
 }
-.botones button:hover{
+
+.botones button:hover {
     background-color: var(--color-white);
     border: 2px var(--color-blue) solid;
     color: var(--color-blue);
 }
+
 .botones button:hover {
     opacity: 0.9;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -64,13 +67,13 @@
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 2px var(--color-blue) solid;
+    border: 2px var(--color-dark-blue) solid;
 }
 
 .modal-content h2 {
@@ -83,16 +86,16 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    background-color: var(--color-dark-blue);
-    border: var(--color-white) 2px solid;
-    color: white;
+    transition: all .20s linear;
+    background-color: var(--color-blue);
+    border: var(--color-blue) 2px solid;
+    color: var(--color-white);
 }
 
-.modal-content button:hover{
+.modal-content button:hover {
     background-color: var(--color-white);
     border: 2px var(--color-blue) solid;
-    color: var(--color-blue);   
+    color: var(--color-blue);
 }
 
 
