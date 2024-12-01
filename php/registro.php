@@ -23,7 +23,7 @@
 
             <article class="art-registro">
 
-                <form action="guardar-usu.php" class="form-group" method="POST" >
+                <form action="guardar-usu.php" class="form-group" method="POST">
 
                     <p class="art-registro-text">Datos Personales</p>
 
@@ -42,11 +42,14 @@
                     <select name="carrera" required id="carrera">
                         <option value="">Seleccione una carrera</option>
                     </select>
-                    <select name="semestre" required>
+
+                    <!-- <select name="semestre" required>
                         <option value="">Selecciona el semestre</option>
                         <option value="1">1</option>
                         <option value="11">11</option>
-                    </select>
+                    </select> -->
+
+                    <input type="number" placeholder="Semestre" name="semestre" required>
 
                     <input type="text" placeholder="Usuario" name="usuario" required>
                     <input type="password" placeholder="Contraseña" name="contrasena" required>

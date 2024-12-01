@@ -30,7 +30,7 @@ require "proteccion_admin.php"
 
   <article class="arti-main">
 
-    <details class="arti-detail">
+    <details class="arti-detail" open>
       <summary class="arti-sumary">Usuarios Registrados</summary>
 
       <div class="arti-sum-div2">
