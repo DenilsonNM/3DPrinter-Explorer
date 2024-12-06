@@ -76,7 +76,7 @@ require "proteccion_admin.php"
                 <td><?php echo $row["usuario"]; ?></td>
                 <td>
                   <?php
-                  echo "<a class=\"button-2\" onclick=\"return confirm('¿Realmente deseas MODIFICAR este PRODUCTO?')\" href='modprod.php?prod_id=" . $row['prod_id'] . "'>Modificar</a>";
+                  echo "<a class=\"button-2\" onclick=\"return confirm('¿Realmente deseas MODIFICAR este USUARIO?')\" href='modificar_usuario.php?id_registro=" . $row['id_registro'] . "'>Modificar</a>";
                   ?>
                 </td>
                 <td>

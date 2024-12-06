@@ -127,7 +127,7 @@ button {
   align-items: center;
 }
 
-.nav-header{
+.nav-header {
   display: flex;
 }
 
@@ -135,14 +135,14 @@ button {
   display: inline-block;
   text-decoration: none;
   color: var(--color-white);
-  border-bottom: 1px var(--color-blue) solid;
+  border-bottom: 2px var(--color-blue) solid;
   text-align: center;
   margin-left: 20px;
   transition: all .10s linear;
 }
 
 .nav-header a:hover {
-  border-bottom: 1px var(--color-white) solid;
+  border-bottom: 2px var(--color-white) solid;
 }
 
 /* ------------- SEC-HOME-LANDING ---------------------------- */
@@ -255,8 +255,8 @@ ul {
     flex-direction: column;
     /* display: none; */
   }
-  
-  .nav-header{
+
+  .nav-header {
     flex-direction: column;
     justify-self: center;
     align-items: center;

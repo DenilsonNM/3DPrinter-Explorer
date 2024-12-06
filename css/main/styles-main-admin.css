@@ -355,3 +355,22 @@ td {
   border-color: var(--color-blue);
   outline: none;
 }
+
+/* ------------------------------------- */
+
+.mod_form {
+  text-align: center;
+}
+
+.btn-res {
+  margin: 10px;
+}
+
+.mod_form input,
+textarea {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: var(--color-white);
+  padding: 10px 0;
+}
