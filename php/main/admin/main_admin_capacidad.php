@@ -65,7 +65,7 @@ require "proteccion_admin.php"
                 <td><?php echo $row["cant_no_fun"]; ?></td>
                 <td>
                   <?php
-                  echo "<a class=\"button-2\" onclick=\"return confirm('¿Realmente deseas MODIFICAR?')\" href='modprod.php?prod_id=" . $row['prod_id'] . "'>Modificar</a>";
+                  echo "<a class=\"button-2\" onclick=\"return confirm('¿Realmente deseas MODIFICAR?')\" href='modificar_capacidad.php?id_maquina=" . $row['id_maquina'] . "'>Modificar</a>";
                   ?>
                 </td>
                 <td>
