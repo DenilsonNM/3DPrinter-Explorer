@@ -225,6 +225,8 @@ summary {
   align-items: center;
 }
 
+
+
 /* ---------------CORREO---------------- */
 
 .arti-detail {
@@ -302,7 +304,7 @@ summary::marker {
 /* ----------CAPACIDAD INSTALADA-------- */
 
 
-.arti-sum-div2 {}
+/* .arti-sum-div2 {} */
 
 .table_cap {
   width: 100%;
