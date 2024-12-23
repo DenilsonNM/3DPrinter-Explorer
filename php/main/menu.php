@@ -1,5 +1,5 @@
   <section class="sect-main">
-    <nav class="nav-main">
+    <nav class="nav-main" id="nav_menu_id">
       <ul>
         <li>
           <p>Ubicaciones</p> <a href="main-ubicaciones.php" class="button-1"><i class="fa-solid fa-location-dot"></i></a>
@@ -22,3 +22,5 @@
       </ul>
     </nav>
   </section>
+
+  <div class="div_cerrar_menu" id="cerrar_menu_id"></div>
