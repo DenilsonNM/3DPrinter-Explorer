@@ -102,3 +102,9 @@
 .modal-content button:hover {
     opacity: 0.9;
 }
+
+@media screen and (max-width: 800px) {
+    .cronometro-container {
+        margin: 20px;
+    }
+}

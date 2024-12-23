@@ -327,7 +327,9 @@ summary::marker {
 /* ----------CAPACIDAD INSTALADA-------- */
 
 
-/* .arti-sum-div2 {} */
+.arti-sum-div2 {
+  overflow-x: auto;
+}
 
 .table_cap {
   width: 100%;
