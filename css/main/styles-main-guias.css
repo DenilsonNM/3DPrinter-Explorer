@@ -30,7 +30,7 @@
 
 .art-pdf figure {
   border: 2px var(--color-dark-blue) solid;
-  width: 300px;
+  max-width: 300px;
   border-radius: 10px 10px 0px 0px;
   height: 200px;
   overflow: hidden;
@@ -188,4 +188,25 @@
 
 .arti-main a:hover img {
   transform: scale(105%);
+}
+
+@media screen and (max-width: 800px) {
+  .sec-pdf {
+    margin-left: 0;
+  }
+
+  .arti-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px 55px;
+  }
+
+  .art-pdf figure {
+    width: 400px;
+    height: 200px;
+  }
+
+  .pdf-info {
+    width: 400px;
+  }
 }
