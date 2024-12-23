@@ -147,7 +147,6 @@ summary {
   border-radius: 100%;
   padding: 10px;
 }
-
 /* ------------------------------------- */
 
 .sect-main {
@@ -187,6 +186,10 @@ summary {
 
 .nav-main li:hover p {
   color: var(--color-white);
+}
+
+.icon-bar{
+  display: none;
 }
 
 /* ------------------------------------- */
@@ -335,4 +338,13 @@ td {
 .table_cap td:last-child,
 .table_cap th:last-child {
   border-right: none;
+}
+
+@media screen and (max-width: 430px) {
+  .sect-main {
+    display: none;
+  }
+  .icon-bar{
+    display: block;
+  }
 }
