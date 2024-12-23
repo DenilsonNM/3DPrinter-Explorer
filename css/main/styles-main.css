@@ -252,8 +252,6 @@ summary {
   align-items: center;
 }
 
-
-
 /* ---------------CORREO---------------- */
 
 .arti-detail {
@@ -380,7 +378,7 @@ td {
   background-color: #00000020;
 }
 
-.button-cerrarsesion_menu {
+.button_cerrarsesion_menu {
   display: none;
 }
 
@@ -417,7 +415,7 @@ td {
     display: none;
   }
 
-  .button-cerrarsesion_menu {
+  .button_cerrarsesion_menu {
     display: inline-block;
     background-color: var(--color-red);
   }
