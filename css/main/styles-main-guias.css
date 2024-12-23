@@ -16,6 +16,7 @@
 
 .sec-pdf {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
   margin-left: 160px;

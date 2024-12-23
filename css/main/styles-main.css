@@ -131,6 +131,7 @@ summary {
   position: sticky;
   top: 0;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 
 .head-main h1 {
@@ -147,6 +148,7 @@ summary {
   border-radius: 100%;
   padding: 10px;
 }
+
 /* ------------------------------------- */
 
 .sect-main {
@@ -188,8 +190,24 @@ summary {
   color: var(--color-white);
 }
 
-.icon-bar{
+.icon-bar {
   display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--color-white);
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: var(--color-red);
+  transition: all .10s linear;
+  border: 2px var(--color-red) solid;
+}
+
+.icon-bar:hover {
+  background-color: var(--color-white);
+  color: var(--color-red);
 }
 
 /* ------------------------------------- */
@@ -203,6 +221,7 @@ summary {
 }
 
 .arti-main-intro h1 {
+  line-height: 100px;
   font-size: 100px;
   text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.100);
 }
@@ -273,7 +292,8 @@ summary::marker {
 
 .sum-div-map-img {
   display: flex;
-  /* gap: 50px; */
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-evenly;
 }
 
@@ -340,11 +360,60 @@ td {
   border-right: none;
 }
 
-@media screen and (max-width: 430px) {
+/* ------------------------------------- */
+
+/* @media screen and (max-width: 1200px) {} */
+
+@media screen and (max-width: 800px) {
+
+  .head-main h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /* ------------------------------------- */
+
   .sect-main {
     display: none;
   }
-  .icon-bar{
-    display: block;
+
+  .icon-bar {
+    display: flex;
   }
+
+  .button-cerrarsesion {
+    display: none;
+  }
+
+  /* ------------------------------------- */
+
+  .arti-main-intro {
+    position: relative;
+    top: 200px;
+    left: 0;
+    text-align: center;
+  }
+
+  .arti-main-intro h1 {
+    line-height: 100px;
+    font-size: 80px;
+    text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.100);
+  }
+
+  /* ------------------------------------- */
+
+  .arti-main {
+    margin-left: 0;
+  }
+
+  /* ------------------------------------- */
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .arti-sum-div {
+    padding: 30px;
+  }
+
 }

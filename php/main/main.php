@@ -23,10 +23,8 @@ require "proteccion.php"
     </h1>
     <a href="#" class="logo"><i class="fa-solid fa-binoculars"></i></a>
 
-    <a href="cerrarsesion.php" class="button-3" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
-    <div class="icon-bar">
-       <i class="fa-solid fa-bars"></i> 
-    </div>
+    <a href="cerrarsesion.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <div class="icon-bar"><i class="fa-solid fa-bars"></i></div>
   </header>
 
   <?php
