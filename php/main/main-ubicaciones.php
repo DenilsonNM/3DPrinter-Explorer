@@ -11,6 +11,7 @@ require "proteccion.php"
   <title>3DPrinter Explorer 2024</title>
   <link rel="stylesheet" href="../../css/main/styles-main.css">
   <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@ require "proteccion.php"
     <h1>Ubicaciones de impresoras</h1>
     <a href="main.php" class="logo"><i class="fa-solid fa-binoculars"></i></a>
     <a href="cerrarsesion.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
-    <div class="icon-bar"><i class="fa-solid fa-bars"></i></div>
+    <div class="icon-bar" id="btn_bars_id"><i class="fa-solid fa-bars"></i></div>
   </header>
 
   <?php
@@ -78,6 +79,19 @@ require "proteccion.php"
     </details>
   </article>
 
+  <script>
+    $("#btn_bars_id").click(function() {
+      $("#nav_menu_id").addClass("mostrar");
+      $("#cerrar_menu_id").addClass("mostrar_back");
+    })
+
+    window.onclick = function(event) {
+      if (event.target == cerrar_menu_id) {
+        $("#nav_menu_id").removeClass("mostrar")
+        $("#cerrar_menu_id").removeClass("mostrar_back")
+      }
+    }
+  </script>
 </body>
 
 </html>

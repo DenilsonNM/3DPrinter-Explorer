@@ -20,7 +20,7 @@ require "proteccion.php"
     <h1>Guías y Tutoriales</h1>
     <a href="main.php" class="logo"><i class="fa-solid fa-binoculars"></i></a>
     <a href="cerrarsesion.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
-    <div class="icon-bar"><i class="fa-solid fa-bars"></i></div>
+    <div class="icon-bar" id="btn_bars_id"><i class="fa-solid fa-bars"></i></div>
   </header>
 
   <?php
@@ -112,22 +112,33 @@ require "proteccion.php"
   </article>
 
   <script>
+    $("#btn_bars_id").click(function() {
+      $("#nav_menu_id").addClass("mostrar");
+      $("#cerrar_menu_id").addClass("mostrar_back");
+    })
+
+    window.onclick = function(event) {
+      if (event.target == cerrar_menu_id) {
+        $("#nav_menu_id").removeClass("mostrar")
+        $("#cerrar_menu_id").removeClass("mostrar_back")
+      }
+    }
     // SCRIPT DOCUMENTO 1
     $(document).ready(function() {
       $("#btn_modal1").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        $("#cont_modal1").addClass('mostrar');
+        $("#cont_modal1").addClass('mostrar_guia');
       });
 
       $("#cerrar_modal1").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado
-        $("#cont_modal1").removeClass('mostrar');
+        $("#cont_modal1").removeClass('mostrar_guia');
       });
 
       // Cerrar el modal al hacer clic fuera del contenido
       $(window).click(function(e) {
         if ($(e.target).is("#cont_modal1")) {
-          $("#cont_modal1").removeClass('mostrar');
+          $("#cont_modal1").removeClass('mostrar_guia');
         }
       });
     });
@@ -136,18 +147,18 @@ require "proteccion.php"
     $(document).ready(function() {
       $("#btn_modal2").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        $("#cont_modal2").addClass('mostrar');
+        $("#cont_modal2").addClass('mostrar_guia');
       });
 
       $("#cerrar_modal2").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado
-        $("#cont_modal2").removeClass('mostrar');
+        $("#cont_modal2").removeClass('mostrar_guia');
       });
 
       // Cerrar el modal al hacer clic fuera del contenido
       $(window).click(function(e) {
         if ($(e.target).is("#cont_modal2")) {
-          $("#cont_modal2").removeClass('mostrar');
+          $("#cont_modal2").removeClass('mostrar_guia');
         }
       });
     });
@@ -156,18 +167,18 @@ require "proteccion.php"
     $(document).ready(function() {
       $("#btn_modal3").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        $("#cont_modal3").addClass('mostrar');
+        $("#cont_modal3").addClass('mostrar_guia');
       });
 
       $("#cerrar_modal3").click(function(e) {
         e.preventDefault(); // Evita el comportamiento predeterminado
-        $("#cont_modal3").removeClass('mostrar');
+        $("#cont_modal3").removeClass('mostrar_guia');
       });
 
       // Cerrar el modal al hacer clic fuera del contenido
       $(window).click(function(e) {
         if ($(e.target).is("#cont_modal3")) {
-          $("#cont_modal3").removeClass('mostrar');
+          $("#cont_modal3").removeClass('mostrar_guia');
         }
       });
     });

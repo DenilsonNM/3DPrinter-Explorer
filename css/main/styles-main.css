@@ -367,6 +367,8 @@ td {
   border-right: none;
 }
 
+/* ------------------------------------- */
+
 .div_cerrar_menu {
   display: none;
   width: 100%;
@@ -376,6 +378,10 @@ td {
   top: 0;
   left: 0;
   background-color: #00000020;
+}
+
+.button-cerrarsesion_menu {
+  display: none;
 }
 
 /* ------------------------------------- */
@@ -392,6 +398,7 @@ td {
 
   .nav-main {
     left: -180px;
+    padding-top: 10px;
   }
 
   .mostrar {
@@ -408,6 +415,11 @@ td {
 
   .button-cerrarsesion {
     display: none;
+  }
+
+  .button-cerrarsesion_menu {
+    display: inline-block;
+    background-color: var(--color-red);
   }
 
   /* ------------------------------------- */

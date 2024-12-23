@@ -19,6 +19,9 @@
         <li>
           <p>Cronómetro</p><a href="main-cronometro.php" class="button-1"><i class="fa-solid fa-clock"></i></a>
         </li>
+        <li>
+          <p>Salir</p><a href="cerrarsesion.php" class="button-1 button-cerrarsesion_menu" onclick="return confirm('¿Estás seguro de que desea salir?')"><i class="fa-solid fa-user-lock"></i></a>
+        </li>
       </ul>
     </nav>
   </section>
