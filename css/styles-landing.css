@@ -251,14 +251,44 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-  .menu-header {
-    flex-direction: column;
-    /* display: none; */
+  .nav-header{
+    display: none;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .button-1 {
+    font-size: 13px
+  }
+  .sec-land-home {
+    flex-direction: column-reverse;
+  }
+  .sec-art-home h1 {
+    font-size: 35px;
+    line-height: 35px;
+    /* border: 1px red solid; */
+    text-align: center;
+  }
+  .sec-art-home {
+    max-width: 350px;
+  }
+  /* ------------------------- */
+  
+  .escuelas figure {
+    max-width: 70px;
+  }
+  .escuelas img {
+    filter: grayscale(0);
   }
 
-  .nav-header {
+  /* ------------------------- */
+  .sec-land-about {
+    display: flex;
     flex-direction: column;
-    justify-self: center;
-    align-items: center;
+  }
+  .sec-art-about h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
   }
 }
