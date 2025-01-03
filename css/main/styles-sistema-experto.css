@@ -11,11 +11,12 @@
 .form_sisexp {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form_sisexp fieldset {
   border: 2px var(--color-dark-blue) solid;
-  border-radius: 10px;
+  border-radius: 14px 14px 10px 10px;
   text-align: center;
 }
 
@@ -27,6 +28,7 @@
   width: 100%;
   text-align: center;
   padding: 20px;
+  border-radius: 10px 10px 0 0;
 }
 
 .radio-btn {
@@ -48,7 +50,7 @@
   padding: 10px 20px;
   color: var(--color-white);
   border: 2px var(--color-blue) solid;
-  width: 350px;
+  /* width: 350px; */
   transition: all .10s linear;
 }
 
@@ -94,7 +96,7 @@ fieldset.active {
   min-width: 100px;
   transition: all .10s linear;
   width: 150px;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .button-4:hover {
@@ -106,12 +108,8 @@ fieldset.active {
 .div_resp {
   border: 2px var(--color-dark-blue) solid;
   border-radius: 10px;
-  width: 600px;
-  height: 50px;
+  width: 100%;
+  height: 10%;
   text-align: center;
   padding: 10px;
-}
-
-.puntos {
-  font-size: 32px;
 }

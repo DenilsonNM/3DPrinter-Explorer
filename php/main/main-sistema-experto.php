@@ -77,7 +77,7 @@ require "proteccion.php"
 
 
       <div id="response" class="div_resp">
-        <p id="responseText"><span class="puntos">---</span></p>
+        <p id="responseText">---</p>
       </div>
     </div>
   </article>
