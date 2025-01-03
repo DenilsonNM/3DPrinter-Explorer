@@ -244,13 +244,12 @@ summary {
 /* ----------SISTEMA EXPERTO------------- */
 
 .sisexp {
-  border: 2px var(--color-dark-blue) solid;
-  height: 500px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 
 /* ---------------CORREO---------------- */
 

@@ -1,0 +1,117 @@
+:root {
+  --color-blue: #388BA5;
+  --color-dark-blue: #232E33;
+  --color-white: #F1F1F1;
+  --color-red: #A53838;
+  --main-font: 'Roboto', Arial, sans-serif;
+}
+
+/* ------------------------------------- */
+
+.form_sisexp {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_sisexp fieldset {
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.label_qtn {
+  display: inline-block;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.radio-btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  margin: 20px;
+}
+
+.radio-btn input[type="radio"] {
+  display: none;
+}
+
+.radio-btn span {
+  display: inline-block;
+  background-color: var(--color-blue);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: var(--color-white);
+  border: 2px var(--color-blue) solid;
+  width: 350px;
+  transition: all .10s linear;
+}
+
+.radio-btn:hover span {
+  background-color: var(--color-white);
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.radio-btn input[type="radio"]:checked+span {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.hidden {
+  display: none;
+}
+
+fieldset {
+  display: none;
+}
+
+fieldset.active {
+  display: block;
+}
+
+.div_sisexp_btns {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-4 {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  border: 2px var(--color-red) solid;
+  border-radius: 10px;
+  min-width: 100px;
+  transition: all .10s linear;
+  width: 150px;
+  margin: 0 10px;
+}
+
+.button-4:hover {
+  color: var(--color-red);
+  background-color: var(--color-white);
+  border-color: var(--color-red);
+}
+
+.div_resp {
+  border: 2px var(--color-dark-blue) solid;
+  border-radius: 10px;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.puntos {
+  font-size: 32px;
+}

@@ -12,21 +12,21 @@ function processForm() {
 
     // Lógica para todas las combinaciones posibles
     if (q1 === 'yes' && q2 === 'yes' && q3 === 'yes') {
-        responseText = 'Te gusta la programación, prefieres trabajar en equipo y usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'yes' && q2 === 'yes' && q3 === 'no') {
-        responseText = 'Te gusta la programación, prefieres trabajar en equipo, pero no usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'yes' && q2 === 'no' && q3 === 'yes') {
-        responseText = 'Te gusta la programación, prefieres trabajar solo y usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'yes' && q2 === 'no' && q3 === 'no') {
-        responseText = 'Te gusta la programación, prefieres trabajar solo y no usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'no' && q2 === 'yes' && q3 === 'yes') {
-        responseText = 'No te gusta la programación, pero prefieres trabajar en equipo y usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'no' && q2 === 'yes' && q3 === 'no') {
-        responseText = 'No te gusta la programación, prefieres trabajar en equipo, pero no usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'no' && q2 === 'no' && q3 === 'yes') {
-        responseText = 'No te gusta la programación, prefieres trabajar solo y usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     } else if (q1 === 'no' && q2 === 'no' && q3 === 'no') {
-        responseText = 'No te gusta la programación, prefieres trabajar solo y no usas Java.';
+        responseText = 'La configuración que debes utilizar es:';
     }
 
     document.getElementById('responseText').innerText = responseText;
