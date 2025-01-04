@@ -24,7 +24,7 @@ require "proteccion_admin.php"
       ?>
     </h1>
     <a href="#" class="logo"><i class="fa-solid fa-binoculars"></i></a>
-    <a href="cerrarsesion.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <a href="cerrarsesion_admin.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
     <div class="icon-bar" id="btn_bars_id"><i class="fa-solid fa-bars"></i></div>
   </header>
 

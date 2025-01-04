@@ -23,7 +23,7 @@ require "proteccion_admin.php"
   <header class="head-main">
     <h1>Capacidad Instalada</h1>
     <a href="main_admin.php" class="logo"><i class="fa-solid fa-binoculars"></i></a>
-    <a href="cerrarsesion.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
+    <a href="cerrarsesion_admin.php" class="button-3 button-cerrarsesion" onclick="return confirm('¿Estás seguro de que desea salir?')">Salir</a>
     <div class="icon-bar" id="btn_bars_id"><i class="fa-solid fa-bars"></i></div>
   </header>
 
