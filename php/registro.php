@@ -57,11 +57,11 @@
 
                     <div class="form-checkbox">
                         <input type="checkbox" required>
-                        <p class="check-text">Acepto todos los terminos y condicones</p>
+                        <p class="check-text">Acepto todos los términos y condiciones</p>
                     </div>
 
                     <div class="form-btns">
-                        <button type="submit" class="button-1" onclick="return confirm('¿Estás seguro de que desea continuar')">Registrase</button>
+                        <button type="submit" class="button-1" onclick="return confirm('¿Estás seguro de que desea continuar')">Registrarse</button>
 
                         <button type="button" class="button-3"><a href="../index.html" onclick="return confirm('¿Estás seguro de que desea salir?')">Cancelar</a></button>
                     </div>

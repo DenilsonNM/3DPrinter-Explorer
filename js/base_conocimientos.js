@@ -12,21 +12,21 @@ function processForm() {
 
     // Lógica para todas las combinaciones posibles
     if (q1 === 'yes' && q2 === 'yes' && q3 === 'yes') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Grueso';
     } else if (q1 === 'yes' && q2 === 'yes' && q3 === 'no') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Estándar';
     } else if (q1 === 'yes' && q2 === 'no' && q3 === 'yes') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Estándar';
     } else if (q1 === 'yes' && q2 === 'no' && q3 === 'no') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Fino';
     } else if (q1 === 'no' && q2 === 'yes' && q3 === 'yes') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Grueso';
     } else if (q1 === 'no' && q2 === 'yes' && q3 === 'no') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Estándar';
     } else if (q1 === 'no' && q2 === 'no' && q3 === 'yes') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Estándar';
     } else if (q1 === 'no' && q2 === 'no' && q3 === 'no') {
-        responseText = 'La configuración que debes utilizar es:';
+        responseText = 'La configuración que debes utilizar es: Fino';
     }
 
     document.getElementById('responseText').innerText = responseText;
