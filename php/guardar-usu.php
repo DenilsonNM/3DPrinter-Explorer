@@ -13,7 +13,7 @@ $semestre = $_POST["semestre"];
 $usuario = $_POST["usuario"];
 $contrasena = $_POST["contrasena"];
 
-$insertar = "INSERT INTO registo (nombres, p_apellido, s_apellido, correo, n_celular, matricula, institucion, carrera, semestre, usuario, contrasena) VALUES ('$nombres', '$p_apellido', '$s_apellido', '$correo', '$n_celular', '$matricula', '$institucion', '$carrera', '$semestre', '$usuario', '$contrasena')";
+$insertar = "INSERT INTO registro (nombres, p_apellido, s_apellido, correo, n_celular, matricula, institucion, carrera, semestre, usuario, contrasena) VALUES ('$nombres', '$p_apellido', '$s_apellido', '$correo', '$n_celular', '$matricula', '$institucion', '$carrera', '$semestre', '$usuario', '$contrasena')";
 
 $query = mysqli_query($conectar, $insertar);
 
